@@ -1,0 +1,14 @@
+echo "Creating Work Environment"
+mkdir hamexam
+cd hamexam
+pwd
+sleep 1
+echo "Retreiving Files"
+wget -O hamexam.tar.gz https://github.com/dr-strangelove9/hamexam-termux/raw/master/hamexam-termux.tar.gz
+echo "Extracting Files"
+tar -xzvf hamexam.tar.gz
+echo "Installing Files"
+sleep 1
+make install
+cd ..
+rm -rf hamexam
